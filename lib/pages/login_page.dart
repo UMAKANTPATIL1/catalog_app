@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_app/navigate_pages/navigate.dart';
 import 'home_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -11,13 +12,15 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: Colors.white,
-      child: Column(
+      child: SingleChildScrollView(
+        child: Column(
         children: [
           SizedBox(
             height: 25,
           ),
           Image.asset(
             "assets/images/login.png",
+
           ),
           SizedBox(
             height: 15,
@@ -55,7 +58,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 40,
                 ),
                 ElevatedButton(
 
@@ -65,13 +68,16 @@ class LoginPage extends StatelessWidget {
                       fontSize: 17,
                     ),
                   ),
+
                   style: TextButton.styleFrom(
                     backgroundColor: Colors.blueAccent,
                     foregroundColor: Colors.black,
+                    minimumSize: Size(130, 40),
+
 
                   ),
                   onPressed: () {
-                    print("Login Sucessfull...");
+                    Navigator.pushNamed(context, MyRoutes.homeButton);
                   },
                 )
               ],
@@ -79,6 +85,7 @@ class LoginPage extends StatelessWidget {
           )
         ],
       ),
+    )
     );
     /*return Scaffold( //Scafold use Day 1,2,3
       backgroundColor: Colors.deepOrange,
