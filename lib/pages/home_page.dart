@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../drawer/drawer.dart';
 import 'login_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,12 +11,8 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("First App"),
       ),
-      drawer: Drawer(),
-      body:Center(
-        child: Container(
-          child: Text("welcome to $day of Flutter $name "),
-        ),
-      ),
+      drawer: MyDrawer(),
+
 
     );
   }
