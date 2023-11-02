@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class MyTheme{
   static ThemeData darkTheme(BuildContext context) =>ThemeData(
 
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
 
     fontFamily: GoogleFonts.lato().fontFamily
   );
