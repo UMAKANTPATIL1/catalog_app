@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     String name="Learning";
     return Scaffold(
       appBar: AppBar(
-        title: Text("First App"),
+        title: Text("Catalog App"),
       ),
       drawer: MyDrawer(),
 

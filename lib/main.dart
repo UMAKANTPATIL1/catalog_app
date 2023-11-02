@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/navigate_pages/navigate.dart';
 import 'package:my_app/pages/home_page.dart';
 import 'package:my_app/pages/login_page.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:my_app/theme_data/theme_data.dart';
+
+import 'navigate_pages/navigate.dart';
+
 void main(){
   runApp(MyApp());
 }
@@ -11,19 +13,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return Container(
 
+      child: MaterialApp(
+        themeMode: ThemeMode.light,
 
-      themeMode: ThemeMode.light,
+        theme: MyTheme.lightTheme(context),
+        darkTheme: MyTheme.darkTheme(context),//Dark and light theme
 
-      darkTheme: ThemeData(brightness: Brightness.light,
-          fontFamily: GoogleFonts.lato().fontFamily),//Dark and light theme
-          initialRoute: MyRoutes.homeButton,
-      routes: {
-        MyRoutes.homeButton: (context)=>HomePage(),
-        MyRoutes.loginButton:(context)=>LoginPage(),
+        initialRoute: MyRoutes.homeButton,
+        routes: {
+          MyRoutes.homeButton: (context)=>HomePage(),
+          MyRoutes.loginButton:(context)=>LoginPage(),
 
-    },
+      },
+      ),
     );
 
   }
