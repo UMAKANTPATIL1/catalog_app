@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../navigate_pages/navigate.dart';
+
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
@@ -27,22 +29,32 @@ class MyDrawer extends StatelessWidget {
                 leading: Icon(
                   CupertinoIcons.home,
                   color: Colors.white,
+
                 ),
+                onTap: () async{
+                  await Navigator.pushNamed(context, MyRoutes.homeButton);
+                },
                 title: Text(
                   "Home",
                   textScaleFactor: 1.1,
                   style: TextStyle(
                     color: Colors.white,
                   ),
+
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  CupertinoIcons.mail,
+                  CupertinoIcons.photo,
                   color: Colors.white,
+
                 ),
+                onTap: ()async {
+                  print("Gallery");
+                  await Navigator.pushNamed(context, MyRoutes.galleryButton);
+                },
                 title: Text(
-                  "Email me",
+                  "Gallery",
                   textScaleFactor: 1.1,
                   style: TextStyle(
                     color: Colors.white,

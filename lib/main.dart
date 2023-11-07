@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/pages/gallery.dart';
 import 'package:my_app/pages/home_page.dart';
 import 'package:my_app/pages/login_page.dart';
 import 'package:my_app/theme_data/theme_data.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         routes: {
           MyRoutes.homeButton: (context)=>HomePage(),
           MyRoutes.loginButton:(context)=>LoginPage(),
+          MyRoutes.galleryButton:(context)=>MyGallery(),
 
       },
       ),
