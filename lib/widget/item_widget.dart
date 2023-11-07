@@ -9,23 +9,35 @@ final Item item;
 
   @override
   Widget build(BuildContext context) {
+
+
     return Card(
 
-      child: ListTile(
 
-        onTap: () {
-          print("\$${item.name} preserd");
-        },
+      child: SizedBox(
+        height: 75,
 
-        leading: Image.network(item.image,width: 80,height: 80,fit: BoxFit.cover),
-       tileColor: Colors.white38,
+        child: ListTile(
 
-        title: Text(item.name,style: TextStyle(fontWeight: FontWeight.bold),),
-        subtitle: Text(item.desc,style: TextStyle(fontWeight: FontWeight.bold),),
-        trailing: Text("\$${item.price}",style: TextStyle(
-          fontWeight: FontWeight.bold,fontSize: 18
-        ),),
+          onTap: () {
+            print("\$${item.name} preserd");
+          },
+
+          leading: Image.network(item.image,width: 75,height: 80,fit: BoxFit.cover),
+         tileColor: Colors.white38,
+
+          title: Text(item.name,style: TextStyle(fontWeight: FontWeight.bold),),
+          subtitle: Text(item.desc,style: TextStyle(fontWeight: FontWeight.bold),),
+          trailing: Text("\$${item.price}",style: TextStyle(
+            fontWeight: FontWeight.bold,fontSize: 18
+
+          ),
+
+          ),
+
+        ),
       ),
+
     );
   }
 }

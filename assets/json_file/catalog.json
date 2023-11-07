@@ -1,0 +1,52 @@
+{
+	"products":[
+	{	
+		"id":1,
+		"name": "Iphone 12",
+		"desc": "Apple iphone 12 generation.",
+		"price": 30000,
+		"color":"#ede8e6",
+		"image":"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-12-mini-white-2020?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1635202805000"
+	},
+	{	
+		"id":2,
+		"name": "Iphone 13 pro max",
+		"desc": "Apple iphone 13 pro max generation.",
+		"price": 40000,
+		"color":"#ede8e6",
+		"image":"https://shop.unicornstore.in/uploads/images/medium/627122da0daf942d56e60a81f29e2a60.jpg"
+	},
+	{	
+		"id":3,
+		"name": "Iphone 14 pro max",
+		"desc": "Apple iphone 13 pro max generation.",
+		"price": 50000,
+		"color":"#ede8e6",
+		"image":"https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-space-black-220907_inline.jpg.large.jpg"
+	},
+	{
+		"id":4,
+		"name": "Iphone 15 ",
+		"desc": "Apple iphone 13 pro max generation.",
+		"price": 50000,
+		"color":"#ede8e6",
+		"image":"https://www.imagineonline.store/cdn/shop/files/iPhone_15_Black_PDP_Image_Position-1__en-IN_823x.jpg?v=1694605114"
+		},
+		{
+			"id":5,
+			"name": "Iphone 15 pro max",
+			"desc": "Apple iphone 13 pro max generation.",
+			"price": 50000,
+			"color":"#ede8e6",
+			"image":"https://www.imagineonline.store/cdn/shop/files/iPhone_15_Pro_Max_Natural_Titanium_PDP_Image_Position-1__en-IN_d7af62d7-3b60-494a-95dd-7fabd9b09bd5_823x.jpg?v=1694759569"
+		},
+		{
+			"id":6,
+			"name": "Iphone 14",
+			"desc": "Apple iphone 13 pro max generation.",
+			"price": 50000,
+			"color":"#ede8e6",
+			"image":"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-12-mini-white-2020?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1635202805000"
+		}
+	]
+}
