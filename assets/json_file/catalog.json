@@ -6,7 +6,7 @@
 		"desc": "Apple iphone 12 generation.",
 		"price": 30000,
 		"color":"#ede8e6",
-		"image":"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-12-mini-white-2020?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1635202805000"
+		"image":"https://ik.imagekit.io/3dqckpw4d/upload/iphone_12___Black1657182277iphone-12-black.png"
 	},
 	{	
 		"id":2,
@@ -14,39 +14,39 @@
 		"desc": "Apple iphone 13 pro max generation.",
 		"price": 40000,
 		"color":"#ede8e6",
-		"image":"https://shop.unicornstore.in/uploads/images/medium/627122da0daf942d56e60a81f29e2a60.jpg"
+		"image":"https://www.91-img.com/gallery_images_uploads/1/7/1702ab7260d64369108dc5b4ace522b282853ca8.jpg?tr=h-630,c-at_max,q-80"
 	},
 	{	
 		"id":3,
 		"name": "Iphone 14 pro max",
-		"desc": "Apple iphone 13 pro max generation.",
+		"desc": "Apple iphone 14 pro max generation.",
 		"price": 50000,
 		"color":"#ede8e6",
-		"image":"https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-space-black-220907_inline.jpg.large.jpg"
+		"image":"https://m.media-amazon.com/images/I/610pghkO81L._AC_UF1000,1000_QL80_.jpg"
 	},
 	{
 		"id":4,
 		"name": "Iphone 15 ",
-		"desc": "Apple iphone 13 pro max generation.",
+		"desc": "Apple iphone 15 generation.",
 		"price": 50000,
 		"color":"#ede8e6",
-		"image":"https://www.imagineonline.store/cdn/shop/files/iPhone_15_Black_PDP_Image_Position-1__en-IN_823x.jpg?v=1694605114"
+		"image":"https://inventstore.in/wp-content/uploads/2023/09/1-2.webp"
 		},
 		{
 			"id":5,
 			"name": "Iphone 15 pro max",
-			"desc": "Apple iphone 13 pro max generation.",
+			"desc": "Apple iphone 15 pro max generation.",
 			"price": 50000,
 			"color":"#ede8e6",
-			"image":"https://www.imagineonline.store/cdn/shop/files/iPhone_15_Pro_Max_Natural_Titanium_PDP_Image_Position-1__en-IN_d7af62d7-3b60-494a-95dd-7fabd9b09bd5_823x.jpg?v=1694759569"
+			"image":"https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.news_app_ed.jpg"
 		},
 		{
 			"id":6,
 			"name": "Iphone 14",
-			"desc": "Apple iphone 13 pro max generation.",
+			"desc": "Apple iphone 14 generation.",
 			"price": 50000,
 			"color":"#ede8e6",
-			"image":"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-12-mini-white-2020?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1635202805000"
+			"image":"https://rukminim1.flixcart.com/image/850/1000/xif0q/mobile/9/e/e/-original-imaghx9q5rvcdghy.jpeg?q=90"
 		}
 	]
 }
