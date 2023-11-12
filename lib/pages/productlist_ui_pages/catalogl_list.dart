@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_app/navigate_pages/navigate.dart';
 import 'package:my_app/pages/product_detail_page.dart';
 import 'package:velocity_x/velocity_x.dart';
 import '../../item_class/catalog.dart';
@@ -58,10 +59,11 @@ class CatalogItem extends StatelessWidget {
                       "${catalog.price} Rs.".text.lg.bold.make(),
                       ElevatedButton(onPressed:() {
                         print("\$${catalog.name} Buy!!");
+                        Navigator.pushNamed(context, MyRoutes.cartPage);
                       },
                           style: ButtonStyle(backgroundColor: MaterialStateProperty.all(MyTheme.darkBluish),
                               shape:MaterialStateProperty.all(StadiumBorder())  ),
-                          child: "Buy".text.make())
+                          child: "Add To Cart".text.make())
                     ],
 
                   )

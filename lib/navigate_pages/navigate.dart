@@ -3,4 +3,5 @@ class MyRoutes{
   static String homeButton="/home";
   static String galleryButton="/gallery";
   static String productDetalis="/detail";
+  static String cartPage="/cart";
 }

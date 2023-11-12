@@ -27,7 +27,7 @@ class ProductDetails extends StatelessWidget {
           },
               style: ButtonStyle(backgroundColor: MaterialStateProperty.all(MyTheme.darkBluish),
                   shape:MaterialStateProperty.all(StadiumBorder())  ),
-              child: "Buy".text.xl2.make()).wh(120,50)
+              child: "Add To Cart".text.xl2.make()).wh(155,50)
         ],
 
       ).color(Colors.white),

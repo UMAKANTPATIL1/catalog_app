@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/pages/gallery.dart';
+import 'package:my_app/pages/add_to_cart.dart';
 import 'package:my_app/pages/home_page.dart';
+
 import 'package:my_app/pages/login_page.dart';
 import 'package:my_app/theme_data/theme_data.dart';
 
@@ -24,9 +25,10 @@ class MyApp extends StatelessWidget {
 
         initialRoute: MyRoutes.homeButton,
         routes: {
-          MyRoutes.homeButton: (context)=>HomePage(),
+          MyRoutes.homeButton: (context)=>MyGallery(),
           MyRoutes.loginButton:(context)=>LoginPage(),
           MyRoutes.galleryButton:(context)=>MyGallery(),
+          MyRoutes.cartPage:(context)=>MyCart(),
 
       },
       ),
