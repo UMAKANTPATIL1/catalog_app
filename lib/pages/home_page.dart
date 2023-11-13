@@ -41,14 +41,14 @@ class _MyGalleryState extends State<MyGallery> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[200],
+        backgroundColor: context.canvasColor,
         appBar: AppBar(
           title: Text("Catalog App"),
           backgroundColor: Colors.transparent,
         ),
         drawer: MyDrawer(),
         floatingActionButton: FloatingActionButton(onPressed: (){},
-          child:Icon(CupertinoIcons.cart),backgroundColor: MyTheme.darkBluish,),
+          child:Icon(CupertinoIcons.cart,color: Colors.white,),backgroundColor: context.theme.buttonColor,),
 
         body: SafeArea(
           child: Container(

@@ -4,6 +4,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_app/navigate_pages/navigate.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -38,14 +39,14 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: Colors.white,
+        color: context.canvasColor,
         child: SingleChildScrollView(
           child: Form(
             key:formKey,
             child: Column(
               children: [
                 SizedBox(
-                  height: 25,
+                  height: 0,
                 ),
                 Image.asset(
                   "assets/images/login.png",
@@ -125,17 +126,18 @@ class _LoginPageState extends State<LoginPage> {
                           child: changedBtn
                               ? Icon(
                                   Icons.done,
-                                  color: Colors.white,
+                                  color: context.accentColor,
                                 )
                               : Text(
                                   "Login",
                                   style: TextStyle(
+                                    color: Colors.white,
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
                           decoration: BoxDecoration(
-                            color: Colors.blue.shade600,
+                            color: Colors.indigo[500],
                             borderRadius:
                                 BorderRadius.circular(changedBtn ? 50 : 8),
                           ),

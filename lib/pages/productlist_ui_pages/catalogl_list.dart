@@ -39,6 +39,7 @@ class CatalogItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return VxBox(
+
         child: Row(
           children: [
             Hero(tag:Key(catalog.id.toString()),child: CatalogImage(image:catalog.image)),
@@ -48,8 +49,9 @@ class CatalogItem extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
 
-                  catalog.name.text.color(MyTheme.darkBluish).xl.bold.make(),
-                  catalog.desc.text.lg.textStyle(context.captionStyle).make(),
+                  catalog.name.text.color(context.accentColor).xl.bold.make().px(8),
+                  catalog.desc.text.lg.textStyle(context.captionStyle).make().px(8)
+                  ,
                   ButtonBar(
                     buttonPadding: Vx.m8,
                     alignment: MainAxisAlignment.spaceBetween,
@@ -61,8 +63,9 @@ class CatalogItem extends StatelessWidget {
                         print("\$${catalog.name} Buy!!");
                         Navigator.pushNamed(context, MyRoutes.cartPage);
                       },
-                          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(MyTheme.darkBluish),
-                              shape:MaterialStateProperty.all(StadiumBorder())  ),
+                          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(context.theme.buttonColor),
+                              shape:MaterialStateProperty.all(StadiumBorder())
+                          ),
                           child: "Add To Cart".text.make())
                     ],
 
@@ -70,14 +73,14 @@ class CatalogItem extends StatelessWidget {
 
 
                 ],
-              ),
+              ).px(8),
             ),
           ],
 
         )
 
 
-    ).white.rounded.square(150).make().py12();
+    ).color(context.cardColor).rounded.square(150).make().py12();
   }
 
 }
