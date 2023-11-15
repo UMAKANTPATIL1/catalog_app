@@ -8,6 +8,10 @@ class CatalogModel{
         color:"#ede8e6",
         image:"https://itronics.in/wp-content/uploads/2020/10/iphone12-black.png")
   ];
+    
+  static Item getById(int id)=>items.firstWhere((element) => element.id==id,orElse: null);
+  static Item getByPosition(int pos)=>items[pos];
+
 }
 
 class Item{

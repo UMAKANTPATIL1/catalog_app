@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         theme: MyTheme.lightTheme(context),
         darkTheme: MyTheme.darkTheme(context),//Dark and light theme
 
-        initialRoute: MyRoutes.loginButton,
+        initialRoute: MyRoutes.homeButton,
         routes: {
           MyRoutes.homeButton: (context)=>MyGallery(),
           MyRoutes.loginButton:(context)=>LoginPage(),

@@ -9,9 +9,9 @@ class MyCart extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        title: "Cart".text.make(),
+        title: "Cart".text.make(),backgroundColor: context.canvasColor,
       ),
-      backgroundColor: MyTheme.creamColor,
+
     );
   }
 }

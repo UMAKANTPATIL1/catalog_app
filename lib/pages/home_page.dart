@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:my_app/navigate_pages/navigate.dart';
 import 'package:my_app/pages/productlist_ui_pages/catalog_header.dart';
 import 'package:my_app/pages/productlist_ui_pages/catalogl_list.dart';
 import 'package:my_app/theme_data/theme_data.dart';
@@ -47,8 +48,12 @@ class _MyGalleryState extends State<MyGallery> {
           backgroundColor: Colors.transparent,
         ),
         drawer: MyDrawer(),
-        floatingActionButton: FloatingActionButton(onPressed: (){},
-          child:Icon(CupertinoIcons.cart,color: Colors.white,),backgroundColor: context.theme.buttonColor,),
+        floatingActionButton: FloatingActionButton(onPressed: (){
+          Navigator.pushNamed(context, MyRoutes.cartPage);
+          },
+          child:Icon(CupertinoIcons.cart,color: Colors.white,),backgroundColor: context.theme.buttonColor,
+
+        ),
 
         body: SafeArea(
           child: Container(
