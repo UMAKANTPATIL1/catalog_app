@@ -18,18 +18,18 @@ class ProductDetails extends StatelessWidget {
       backgroundColor: context.canvasColor,),
       backgroundColor: context.canvasColor,
       bottomNavigationBar: ButtonBar(
-        buttonPadding: Vx.m8,
+        buttonPadding: Vx.mH12,
         alignment: MainAxisAlignment.spaceBetween,
 
         children: [
 
-          "${catalogItem.price} Rs.".text.xl2.color(Colors.redAccent).bold.make().px8(),
+          "${catalogItem.price} Rs.".text.xl2.color(context.accentColor).bold.make().px8(),
           ElevatedButton(onPressed:() {
             print("\$${catalogItem.name} Buy!!");
           },
               style: ButtonStyle(backgroundColor: MaterialStateProperty.all(context.theme.buttonColor),
                   shape:MaterialStateProperty.all(StadiumBorder())  ),
-              child: "Add To Cart".text.xl2.make()).wh(155,45)
+              child: "Add To Cart".text.xl.make()).wh(150,40)
         ],
 
       ).color(context.cardColor),
@@ -56,13 +56,12 @@ class ProductDetails extends StatelessWidget {
                     children: [
                       catalogItem.name.text
                           .color(context.accentColor)
-                          .xl4
+                          .xl2
                           .bold
                           .make()
-                          .py(3),
+                          .p(7),
                       catalogItem.desc.text.lg
                           .textStyle(context.captionStyle).center
-                          .xl2
                           .make(),
                     ],
                   ).p64(),
