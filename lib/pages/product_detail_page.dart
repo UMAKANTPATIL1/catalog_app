@@ -4,6 +4,7 @@ import 'package:my_app/theme_data/theme_data.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../item_class/catalog.dart';
+import 'add_to_cart_functionality.dart';
 
 class ProductDetails extends StatelessWidget {
   final Item catalogItem;
@@ -18,18 +19,22 @@ class ProductDetails extends StatelessWidget {
       backgroundColor: context.canvasColor,),
       backgroundColor: context.canvasColor,
       bottomNavigationBar: ButtonBar(
-        buttonPadding: Vx.mH12,
+        buttonPadding: Vx.mH24,
         alignment: MainAxisAlignment.spaceBetween,
 
         children: [
 
           "${catalogItem.price} Rs.".text.xl2.color(context.accentColor).bold.make().px8(),
-          ElevatedButton(onPressed:() {
-            print("\$${catalogItem.name} Buy!!");
-          },
-              style: ButtonStyle(backgroundColor: MaterialStateProperty.all(context.theme.buttonColor),
-                  shape:MaterialStateProperty.all(StadiumBorder())  ),
-              child: "Add To Cart".text.xl.make()).wh(150,40)
+          AddToCart(catalog: catalogItem),
+          // ElevatedButton(onPressed:() {
+          //   print("\$${catalogItem.name} Buy!!");
+          // },
+          //
+          //     style: ButtonStyle(
+          //       backgroundColor: MaterialStateProperty.all(context.canvasColor),
+          //         shape: MaterialStateProperty.all(StadiumBorder())),
+          //     child: AddToCart(catalog: catalogItem,)) ,
+
         ],
 
       ).color(context.cardColor),

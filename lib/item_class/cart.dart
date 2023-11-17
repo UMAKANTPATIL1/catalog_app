@@ -1,11 +1,13 @@
 import 'package:my_app/item_class/catalog.dart';
 
 class CartModel {
-  static final cartModel=CartModel._internal();
+  //singlton object
+ /* static final cartModel=CartModel._internal();
   CartModel._internal();
   factory CartModel()=>cartModel;
 
 
+  */
   late CatalogModel _catalog;
   final List<int> _itemId = [];
 

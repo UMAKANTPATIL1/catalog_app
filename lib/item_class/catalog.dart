@@ -1,7 +1,8 @@
 class CatalogModel{
-  static final catalogModel=CatalogModel._internal();
+  //singlton object
+ /* static final catalogModel=CatalogModel._internal();
   CatalogModel._internal();
-  factory CatalogModel()=>catalogModel;
+  factory CatalogModel()=>catalogModel;*/
   static  List<Item> items=[
     Item(
         id:1,
