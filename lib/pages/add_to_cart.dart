@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/item_class/cart.dart';
+import 'package:my_app/cart_store/cart.dart';
 import 'package:my_app/item_class/catalog.dart';
 import 'package:my_app/theme_data/theme_data.dart';
 import 'package:velocity_x/velocity_x.dart';
+
+import '../cart_store/manupulate_data_store.dart';
 class MyCart extends StatelessWidget {
   const MyCart({super.key});
 
@@ -28,7 +30,7 @@ class _CartTotal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _cart=CartModel();
+    final CartModel _cart=(VxState.store as MyStore).cart;
     CatalogModel catolg;
 
 
@@ -38,9 +40,17 @@ class _CartTotal extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
+          VxConsumer(mutations: {RemoveMutation},
+            notifications: {},
+            builder:(context, store, _) => "\INR.${_cart.totalPrice}".text.xl2.make(),
+            // builder:(context,_){
+            //     "\INR.${_cart.totalPrice}".text.xl2.make(),
+            // },
 
 
-          "\INR.${_cart.totalPrice}".text.xl2.make(),
+          ),
+
+
           30.widthBox,
           ElevatedButton(
               onPressed: () {
@@ -57,18 +67,12 @@ class _CartTotal extends StatelessWidget {
   }
 }
 
-class _CartList extends StatefulWidget {
-  const _CartList({super.key});
-
+class _CartList extends StatelessWidget{
   @override
-  State<_CartList> createState() => _CartListState();
-}
 
-class _CartListState extends State<_CartList> {
-  @override
-  final _cart=CartModel();
+  final CartModel _cart=(VxState.store as MyStore).cart;
   Widget build(BuildContext context) {
-
+    VxState.watch(context, on: [RemoveMutation]);
     return _cart.items.isEmpty
         ? "Cart Is Empty...".text.xl2.makeCentered()
         : ListView.builder(
@@ -77,9 +81,10 @@ class _CartListState extends State<_CartList> {
       leading: Icon(Icons.done,color: Colors.green,),
       trailing: IconButton(icon:Icon(Icons.remove_circle_outline_rounded,color: Colors.redAccent,),
         onPressed:() {
-        _cart.remove(_cart.items[index]);
-        setState(() {
-        });
+        RemoveMutation(_cart.items[index]);
+        //_cart.remove(_cart.items[index]);
+        // setState(() {
+        // });
         },
       ),
       title: _cart.items[index].name.text.make(),

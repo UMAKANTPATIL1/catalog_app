@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app/item_class/cart.dart';
+import 'package:my_app/cart_store/cart.dart';
 import 'package:my_app/navigate_pages/navigate.dart';
 import 'package:my_app/pages/product_detail_page.dart';
 import 'package:velocity_x/velocity_x.dart';

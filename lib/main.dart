@@ -6,7 +6,7 @@ import 'package:my_app/pages/login_page.dart';
 import 'package:my_app/theme_data/theme_data.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-import 'manupulate_data_store.dart';
+import 'cart_store/manupulate_data_store.dart';
 import 'navigate_pages/navigate.dart';
 
 void main(){
