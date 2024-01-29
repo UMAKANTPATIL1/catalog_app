@@ -20,12 +20,12 @@ class MyApp extends StatelessWidget {
     return Container(
 
       child: MaterialApp(
-        themeMode: ThemeMode.system,
+        themeMode: ThemeMode.dark,
         debugShowCheckedModeBanner: false,
         theme: MyTheme.lightTheme(context),
         darkTheme: MyTheme.darkTheme(context),//Dark and light theme
 
-        initialRoute: MyRoutes.homeButton,
+        initialRoute: MyRoutes.loginButton,
         routes: {
           MyRoutes.homeButton: (context)=>MyGallery(),
           MyRoutes.loginButton:(context)=>LoginPage(),

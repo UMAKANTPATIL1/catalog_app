@@ -34,7 +34,7 @@ class AddToCart extends StatelessWidget {
           //_cart.add(catalog);
           // setState(() {});
         }
-
+        //ScaffoldMessenger.of(context).showSnackBar(SnackBar(content:"Product added in cart successfully...".text.makeCentered()));
         // Navigator.pushNamed(context, MyRoutes.cartPage);
       },
 
